@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+}
+#content-Area-1 {
+  width: 600px;
+  border: 2px solid rebeccapurple;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+#MoneyDetails {
+  border: 2px solid black;
+  width: 90%;
+  background-color: khaki;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+#incomeExpenseDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+#BalanceDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#BalanceDiv h2 {
+  font-size: 36px;
+}
+#BalanceDiv p {
+  font-size: 32px;
+  border: 2px solid black;
+  background-color: white;
+  width: 200px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+#incomeDiv {
+  border: 2px solid green;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+#incomeDiv h2 {
+  color: rgb(38, 99, 38);
+  font-weight: bolder;
+  font-size: 30px;
+}
+#expenseDiv h2 {
+  color: red;
+  font-weight: bolder;
+  font-size: 30px;
+}
+#incomeDiv p {
+  font-size: 25px;
+  border: 2px solid black;
+  background-color: white;
+  width: 150px;
+  padding: 10px;
+  font-weight: bold;
+  margin: 5px;
+}
+#expenseDiv {
+  border: 2px solid red;
+  border-radius: 5px;
+  padding: 15px;
+}
+#expenseDiv p {
+  font-size: 25px;
+  border: 2px solid black;
+  background-color: white;
+  width: 150px;
+  padding: 10px;
+  font-weight: bold;
+  margin: 5px;
+}
+/* Transaction-Input-Area */
+#Transaction-Input-Area {
+  border: 2px solid black;
+  width: 90%;
+  background-color: khaki;
+
+  padding: 10px;
+  margin: 10px;
+}
+form {
+  margin-top: 5px;
+}
+form input {
+  display: block;
+  padding: 5px;
+  margin: 5px;
+  font-weight: bold;
+  font-size: 16px;
+}
+form label {
+  font-size: 20px;
+  font-weight: bold;
+}
+form button {
+  margin-top: 15px;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 100px;
+  border: 2px solid rgb(204, 83, 83);
+  background-color: white;
+  border-radius: 15px;
+}
+#content-Area-2 {
+  width: 600px;
+  border: 2px solid rebeccapurple;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+}
+.TransactionHistory {
+  width: 100%;
+}
+.items {
+  border: 2px solid black;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  /* height: 50px; */
+  font-size: 18px;
+  background-color: yellowgreen;
+  margin-top: 10px;
+}
+.updateitems {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.updateitems > h2 {
+  font-size: 40px;
+  cursor: pointer;
+  color: red;
+  font-weight: bolder;
+}
+.updateitems > i {
+  color: rgb(52, 52, 194);
+  cursor: pointer;
+}

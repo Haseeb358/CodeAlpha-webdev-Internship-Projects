@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="content-Area-1">
+      <h1>Expense Tracker</h1>
+      <div id="MoneyDetails">
+        <div id="BalanceDiv">
+          <h2>Total Balance</h2>
+          <p>Rs <span id="balance">20000</span></p>
+        </div>
+        <div id="incomeExpenseDiv">
+          <div id="incomeDiv">
+            <h2>Income</h2>
+            <p>Rs <span id="income">10000</span></p>
+          </div>
+          <div id="expenseDiv">
+            <h2>Expense</h2>
+            <p>Rs <span id="expense">18000</span></p>
+          </div>
+        </div>
+      </div>
+      <!-- Form Area -->
+      <div id="Transaction-Input-Area">
+        <h1>Input Transections</h1>
+        <form action="" id="form">
+          <div>
+            <label for="name" id="description">Description :</label>
+            <input type="text" name="description" required id="desid" />
+          </div>
+          <div>
+            <label for="amount" id="amount">Amount</label>
+            <input
+              type="number"
+              name="amount"
+              min="0.01"
+              step="0.01"
+              placeholder="00.00"
+              required
+              id="AmountInputid"
+            />
+          </div>
+          <div>
+            <label for="date" id="date">Date</label>
+            <input type="date" name="date" required id="DateInputid" />
+          </div>
+          <button type="submit" name="income" id="incomebtn">Income</button>
+          <button type="submit" name="expense" id="expensebtn">Expense</button>
+        </form>
+      </div>
+    </div>
+    <div id="content-Area-2">
+      <h1>Transactions Details</h1>
+      <div class="TransactionHistory">
+        
+          </div>
+        </div> 
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
