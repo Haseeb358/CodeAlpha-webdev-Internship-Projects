@@ -1,0 +1,394 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: linear-gradient(
+      rgba(108, 111, 116, 0.8),
+      rgba(108, 111, 116, 0.8)
+    ),
+    url("Ppics/greg-rakozy-oMpAz-DN-9I-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.content-Spacing {
+  max-width: 1210px;
+  margin: 0 auto;
+}
+/* NavBar starts */
+.NavBar {
+  background-color: rgb(132, 173, 52);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+  flex-wrap: wrap;
+}
+.MenuBar {
+  display: none;
+}
+.Sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 50vh;
+  width: 300px;
+  z-index: 999;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+.logoparent {
+  height: 50px;
+  width: 100px;
+  margin: 5px 5px;
+}
+.logo {
+  background-image: url("Ppics/pngwing.com.png");
+
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.Navicons {
+  color: rgb(86, 86, 200);
+  font-size: 1.3rem;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.Navicons-text {
+  display: inline-block;
+  margin-left: 2px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: black;
+  border: 2px solid transparent;
+}
+.Name {
+  color: black;
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.Herosec {
+  margin-top: 35px;
+  /* border: 2px solid red; */
+  padding: 7px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin-bottom: 200px;
+}
+
+.HeroPart1 {
+  width: 48%;
+  min-height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 2rem;
+}
+.HeroPart2 {
+  width: 48%;
+  /* border: 2px solid black; */
+}
+
+.Text-1 {
+  padding: 10px;
+  background-color: rgb(89, 74, 56);
+  border-radius: 3px;
+  font-size: 1.2rem;
+  width: 18rem;
+  text-align: center;
+  color: white;
+  margin: 10px;
+  font-weight: bold;
+  border: yellowgreen solid 2px;
+}
+
+.Text2 > .Tp1,
+.Tp2 {
+  margin: 10px;
+  font-size: 3rem;
+  color: white;
+}
+.Text2 > p {
+  margin: 10px;
+  color: white;
+}
+.Tp1 > span {
+  color: chartreuse;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.HeroPicParent {
+  height: 440px;
+  width: 440px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 2px solid yellowgreen;
+}
+.HeroPic {
+  background-image: url(Ppics/aah.JPG);
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+.Hero-Button {
+  padding: 7px;
+  border-radius: 5px;
+  background-color: rgb(89, 74, 56);
+  width: 7.5rem;
+  height: 3rem;
+  border: yellowgreen solid 2px;
+  margin: 10px;
+  cursor: pointer;
+}
+.Hero-Button > a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.Skill {
+  border: solid 2px chartreuse;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  width: 300px;
+
+  background-color: white;
+  padding: 8px;
+}
+
+.Skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  padding: 5px;
+
+  flex-wrap: wrap;
+}
+
+.Skill-Pic {
+  height: 90px;
+  width: 90px;
+}
+.Skill-Pic img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.SkillsAreaBt {
+  height: 60px;
+  background-color: rgb(89, 74, 56);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border-radius: 10px;
+  width: 150px;
+  margin: 15px auto;
+  border: 2px solid chartreuse;
+}
+.SkillsAreaBt > div {
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 5px;
+  width: 120px;
+  text-align: center;
+}
+
+/* Projects  */
+.Projects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  column-gap: 10px;
+  align-items: center;
+  margin: 15px;
+  margin-bottom: 20px;
+}
+
+.Project-Box {
+  color: white;
+  border: rgb(105, 95, 95) 2px solid;
+  width: 500px;
+  margin-top: 5px;
+  height: 500px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  border: yellowgreen solid 2px;
+
+  background-color: rgb(63, 56, 56);
+  padding: 10px;
+}
+
+.Project-image {
+  height: 400px;
+  width: 100%;
+}
+
+.Project-image > img {
+  height: 100%;
+  width: 100%;
+
+  background-size: cover;
+
+  border-radius: 10px;
+  aspect-ratio: 3/4;
+}
+
+.Project-info {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+.Contact {
+  background-color: rgb(132, 173, 52);
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+.mailbox label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.mailbox input {
+  padding: 5px;
+  font-size: 1rem;
+  width: 150px;
+}
+.mailbox button {
+  width: 70px;
+  height: 35px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(89, 74, 56);
+}
+.ContactsLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.ContactsLinks a {
+  border: 2px chartreuse solid;
+  padding: 10px;
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.hver :hover {
+  border-bottom: 2px solid #f0f0f0;
+}
+@media (max-width: 921px) {
+  .HeroPicParent {
+    height: 350px;
+    width: 350px;
+  }
+  .Skills {
+    margin: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .MenuBar {
+    display: block;
+  }
+  .NavBar {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 730px) {
+  .HeroPicParent {
+    height: 300px;
+    width: 300px;
+  }
+  .Skills {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .Text2 > .Tp1,
+  .Tp2 {
+    font-size: 2rem;
+  }
+
+  .Text-1 {
+    font-size: 1rem;
+    width: 14rem;
+  }
+  .Herosec {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 620px) {
+  .Herosec {
+    flex-direction: column-reverse;
+
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  .HeroPicParent {
+    height: 250px;
+    width: 250px;
+  }
+  .HeroPart1 {
+    align-items: center;
+
+    width: 100%;
+  }
+  .HeroPart2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
